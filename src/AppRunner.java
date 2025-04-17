@@ -69,7 +69,7 @@ public class AppRunner {
         print(" i - Сменить способ оплаты");
         String action = fromConsole().substring(0, 1);
         if ("a".equalsIgnoreCase(action)) {
-            paymentStrategy.addFunds(10);;
+            paymentStrategy.addFunds(10);
             print("Вы пополнили баланс на 10");
             return;
         }
