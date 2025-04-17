@@ -3,9 +3,6 @@ package paymentMethods;
 import java.util.Scanner;
 
 public class CardAcceptor implements PaymentAcceptor {
-    private String cardNumber;
-    private String otp;
-    boolean paymentSuccessful;
     private int balance = 1000;
 
     Scanner sc = new Scanner(System.in);
