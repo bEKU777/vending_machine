@@ -73,6 +73,10 @@ public class AppRunner {
             print("Вы пополнили баланс на 10");
             return;
         }
+        if ("h".equalsIgnoreCase(action)) {
+            isExit = true;
+            return;
+        }
         if ("i".equalsIgnoreCase(action)) {
             this.paymentStrategy = choosePaymentMethod();
             print("Способ оплаты успешно изменён.");
@@ -92,12 +96,7 @@ public class AppRunner {
             }
             print("Такого действия нет среди доступных. Попробуйте снова.");
         } catch (IllegalArgumentException e) {
-            if ("h".equalsIgnoreCase(action)) {
-                isExit = true;
-            } else {
                 print("Недопустимая буква. Попрбуйте еще раз.");
-                chooseAction(products);
-            }
         }
     }
 
