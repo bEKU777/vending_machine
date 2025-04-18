@@ -1,0 +1,26 @@
+# Инициализация репозитория
+git init
+
+# Проверка статуса файлов
+git status
+
+# Добавление файлов в проверку
+git add ...
+
+# Фиксация изменений с комментарием
+git commit -m "Initial commit"
+
+# Изменение комментария последнего коммита
+git commit --amend -m "New comment"
+
+# Если запушил commit в GitHub, то после --amend нужно ввести
+git push --force
+
+# Добавление удалённого репозитория
+git remote add origin https://github.com/username/project.git
+
+# Отправка в удалённый репозиторий в свою ветку
+git push -u origin project
+
+# Просмотр истории коммитов
+git log
